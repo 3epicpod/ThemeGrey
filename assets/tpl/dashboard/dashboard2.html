@@ -1,0 +1,234 @@
+<div class="col-xs-12 button m-t-15 p-b-25">
+        <div id="main_area">
+                <!-- Slider -->
+                <div class="row no-margin">
+                    <div class="col-xs-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row no-margin">
+                            <div class="col-xs-12 no-padding" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+											<div class="col-xs-12 well no-margin">
+												<div id="chart1" style="min-width: 70%; height: 300px; margin: 0 auto"></div>
+											</div>
+										</div>
+
+                                        <div class="item" data-slide-number="1">
+											<div class="col-xs-12 well no-margin">
+												<div id="chart2" style="min-width: 70%; height: 300px; margin: 0 auto"></div>
+											</div>
+										</div>
+
+                                        <div class="item" data-slide-number="2">
+											<div class="col-xs-12 well no-margin">
+												<div id="chart3" style="min-width: 70%; height: 300px; margin: 0 auto"></div>
+											</div>
+										</div>
+
+                                        <div class="item" data-slide-number="3">
+											<div class="col-xs-12 well no-margin">
+												<div id="chart4" style="min-width: 70%; height: 300px; margin: 0 auto"></div>
+											</div>
+										</div>
+
+                                        <div class="item" data-slide-number="4">
+											<div class="col-xs-12 well no-margin">
+												<div id="chart5" style="min-width: 70%; height: 300px; margin: 0 auto"></div>
+											</div>
+										</div>
+
+                                        <div class="item" data-slide-number="5">
+											<div class="col-xs-12 well no-margin">
+												<div id="chart6" style="min-width: 70%; height: 300px; margin: 0 auto"></div>
+											</div>
+										</div>
+                                    </div><!-- Carousel nav -->
+                                    <a class="carousel-control left" data-slide="prev" href="#myCarousel" ng-click="redraw();"><i class="fa c-arrow fa-arrow-circle-left"></i></a> 
+									<a class="carousel-control right" data-slide="next" href="#myCarousel" ng-click="redraw();"><i class="fa c-arrow fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-4" id="carousel-text"></div>
+ 
+                        </div>
+                    </div>
+                </div><!--/Slider-->
+
+                <div class="row no-margin hidden-phone" id="slider-thumbs">
+                    <div class="col-xs-12 m-t-10">
+                        <!-- Bottom switcher of slider -->
+
+                        <ul class="thumbnails">
+                            <li class="col-xs-2">
+                                <span class="thumbnail center pointer" id="carousel-selector-0">
+                                    <!--<img src="http://placehold.it/170x100&text=one">-->
+                                    Slide 1 Heading</br><span style="font-size:9px;">Click to view in carousel</span>
+                                </span>
+                            </li>
+
+                            <li class="col-xs-2">
+                                <span class="thumbnail center pointer" id="carousel-selector-1">
+                                    <!--<img src="http://placehold.it/170x100&text=two">-->
+                                    Slide 2 Heading</br><span style="font-size:9px;">Click to view in carousel</span>
+                                </span>
+                            </li>
+
+                            <li class="col-xs-2">
+                                <span class="thumbnail center pointer" id="carousel-selector-2">
+                                    <!--<img src="http://placehold.it/170x100&text=three">-->
+                                    Slide 3 Heading</br><span style="font-size:9px;">Click to view in carousel</span>
+                                </span>
+                            </li>
+
+                            <li class="col-xs-2">
+                                <span class="thumbnail center pointer" id="carousel-selector-3">
+                                    <!--<img src="http://placehold.it/170x100&text=four">-->
+                                    Slide 4 Headings</br><span style="font-size:9px;">Click to view in carousel</span>
+                                </span>
+                            </li>
+
+                            <li class="col-xs-2">
+                                <span class="thumbnail center pointer" id="carousel-selector-4">
+                                    <!--<img src="http://placehold.it/170x100&text=five">-->
+                                    Slide 5 Heading</br><span style="font-size:9px;">Click to view in carousel</span>
+                                </span>
+                            </li>
+
+                            <li class="col-xs-2">
+                                <span class="thumbnail center pointer" id="carousel-selector-5">
+                                    <!--<img src="http://placehold.it/170x100&text=six">-->
+                                    Slide 6 Heading</br><span style="font-size:9px;">Click to view in carousel</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+		<div class="col-xs-12">
+		<div class="col-xs-12 well">
+			<table st-table="rowCollection" class="table">
+				<thead>
+					<tr>
+						<th>Icon</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Balance</th>
+						<th>E-mail</th>
+						<th>Share</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="row in rowCollection">
+						<td>
+							<initial-name>{{row.firstName| limitTo:2}}</initial-name>
+						</td>
+						<td class="v-mid">{{row.firstName}}</td>
+						<td class="v-mid">{{row.lastName}}</td>
+						<td class="v-mid">{{row.balance}}</td>
+						<td class="v-mid">
+							{{row.email}}
+							<span class="tab-label" ng-if="row.label"><i class="fa fa-tags m-r-5"></i>{{row.label}}</span>
+						</td>
+						<td class="v-mid">
+							<span ng-if="row.status=='up'" style="color:#5fa277;"><i class="fa fa-level-up"></i>{{row.rate}}</span>
+							<span ng-if="row.status=='down'" style="color:#ff6a6a;"><i class="fa fa-level-down"></i>{{row.rate}}</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+    </div>
+	<div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 well">
+			<h5>Spline chart from c3.js</h5>
+			<div id="chart7" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+		</div>
+    </div> 
+	<div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 well">
+			<h5>Pie chart from c3.js</h5>
+			<div id="chart9" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+		</div>
+    </div>
+	<div class="col-xs-12 center m-b-20">
+			<div class="socialIcons overflow-no">
+				<ul class="social-network social-circle">
+					<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+					<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+    </div>
+	
+	
+	<div class="col-xs-12 no-padding pageFooter">
+			<div class="col-xs-12 no-padding m-b-10">
+				<div class="col-sm-12 no-padding">
+					<div class="col-sm-offset-1 col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">GitHub<li>
+							<li><a href="">About us</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Contact & support</a></li>
+							<li><a href="">Enterprise</a></li>
+							<li><a href="">Site status</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">Applications<li>
+							<li><a href="">Product for Mac</a></li>
+							<li><a href="">Product for Windows</a></li>
+							<li><a href="">Product for Eclipse</a></li>
+							<li><a href="">Product mobile apps</a></li>							
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">Services<li>
+							<li><a href="">Web analytics</a></li>
+							<li><a href="">Presentations</a></li>
+							<li><a href="">Code snippets</a></li>
+							<li><a href="">Job board</a></li>							
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">Documentation<li>
+							<li><a href="">Product Help</a></li>
+							<li><a href="">Developer API</a></li>
+							<li><a href="">Product Markdown</a></li>
+							<li><a href="">Product Pages</a></li>							
+						</ul>
+					</div>	
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">More<li>
+							<li><a href="">Training</a></li>
+							<li><a href="">Students & teachers</a></li>
+							<li><a href="">The Shop</a></li>
+							<li><a href="">Plans & pricing</a></li>
+							<li><a href="">Contact us</a></li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<hr>
+			<div class="col-xs-12 no-padding company">
+				<div class="col-sm-12 no-padding">
+					<div class="col-sm-8">
+						<a href="">Terms of Service</a> |    
+						<a href="">Privacy</a> |
+						<a href="">Security</a>
+					</div>
+					<div class="col-sm-4">
+						<p class="muted pull-right">© 2016 Company Name. All rights reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

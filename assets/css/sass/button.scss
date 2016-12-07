@@ -1,0 +1,237 @@
+.btn{
+    overflow: hidden; 
+    position: relative;
+    margin-bottom:5px;
+}
+.btn-topleft-slash{
+    position: absolute;
+    height: 200px;
+    width: 2px;
+    background: $white;
+    top: -120px;
+    transform: rotate(40deg);
+    left: 10px;
+    display: none;
+}
+.btn-topright-slash{
+    position: absolute;
+    height: 200px;
+    width: 2px;
+    background: $white;
+    top: -120px;
+    transform: rotate(-40deg);
+    left: 60px;
+    display: none;
+}
+.btn-top-slash{
+    position: absolute;
+    height: 200px;
+    width: 2px;
+    background: $white;
+    top: -110px;
+    transform: rotate(90deg);
+    left: 60px;
+    display: none;
+}
+.btn-left-slash{
+    position: absolute;
+    height: 200px;
+    width: 2px;
+    background: $white;
+    top: -50px;
+    transform: rotate(0deg);
+    left: -10px;
+    display: none;
+}
+.btn-topleft-wrapper{
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    background: $white;
+    top: -350%;
+    transform: rotate(45deg);
+    left: -40px;
+    display: none;
+}
+.btn-topright-wrapper{
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    background: $white;
+    top: -350%;
+    transform: rotate(-45deg);
+    left: 85%;
+    display: none;
+}
+.btn-top-wrapper{
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    background: $white;
+    top: -380%;
+    transform: rotate(90deg);
+    left: 60px;
+    display: none;
+}
+.btn-left-wrapper{
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    background: $white;
+    top: -50px;
+    transform: rotate(0deg);
+    left: -65%;
+    display: none;
+}
+.btn-left-sharp{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: $white;
+    top: -59px;
+    transform: rotate(-45deg);
+    left: -170px;
+    display: none;
+}
+.btn-wavein{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background: transparent;
+    top: 0%;
+    left: 0px;
+    pointer-events: none;
+}
+.btn:hover{
+    .btn-topleft-slash{
+        display: block;
+        @include animation(topleftslash linear 0.5s);
+    }
+    .btn-topright-slash{
+        display: block;
+        @include animation(toprightslash linear 0.5s);
+    }
+    .btn-top-slash{
+        display: block;
+        @include animation(topslash linear 0.3s);
+    }
+    .btn-left-slash{
+        display: block;
+        @include animation(leftslash linear 0.3s);
+    }
+    .btn-topleft-wrapper{
+        display: block;
+        @include animation(topleftwrapper linear 0.3s);
+    }
+    .btn-topright-wrapper{
+        display: block;
+        @include animation(toprightwrapper linear 0.3s);
+    }
+    .btn-top-wrapper{
+        display: block;
+        @include animation(topwrapper linear 0.3s);
+    }
+    .btn-left-wrapper{
+        display: block;
+        @include animation(leftwrapper linear 0.3s);
+    }
+    .btn-left-sharp{
+        display: block;
+        @include animation(leftsharp linear 0.3s);
+    }
+}
+.btn:active{
+    .btn-wavein{
+        display:block;
+        @include animation(wavein linear 0.19s);
+    }
+}
+@keyframes topleftslash{
+    0% {
+        top:-120px;
+        left:10px
+    }
+    100% {
+        top:-20px;
+        left:100px
+    }
+}
+@keyframes toprightslash{
+    0% {
+        top:-120px;
+    }
+    100% {
+        top:0px;
+    }
+}
+@keyframes topslash{
+    0% {
+        top:-110px;
+    }
+    100% {
+        top:-50px;
+    }
+}
+@keyframes leftslash{
+    0% {
+        left:-10px;
+    }
+    100% {
+        left:70px;
+    }
+}
+@keyframes topleftwrapper{
+    0% {
+        left: -60px;
+    }
+    100% {
+        left: -40px;
+    }
+}
+@keyframes toprightwrapper{
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 85%;
+    }
+}
+@keyframes topwrapper{
+    0% {
+        top: -420%;
+    }
+    100% {
+        top: -380%;
+    }
+}
+@keyframes leftwrapper{
+    0% {
+        left: -85%;
+    }
+    100% {
+        left: 65%;
+    }
+}
+@keyframes leftsharp{
+    0% {
+        left: -190px;
+    }
+    100% {
+        left: -170px;
+    }
+}
+@keyframes wavein{
+    0% {
+        background: #DCDCDC;
+        top:0%;
+        left:0%;
+    }
+    100% {
+        background: #DCDCDC;
+        top:50%;
+        left:50%;
+        height:0%;
+        width:0%;
+    }
+}

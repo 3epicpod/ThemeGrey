@@ -1,0 +1,94 @@
+
+//Colors
+$theme:#2de8bd; 
+/*$theme:#ffffff;*/
+$light-grey:#f5f5f5;
+$orange:#ff8735;
+$blue:#2a2f43;
+$font-color:#453f67; 
+$black:#000000;
+$scroll:#d8d8d8;
+$white:#ffffff;
+$section:#78909c;
+$icon-font-path: '../fonts/';
+$upload:#00D0FF;
+$download:#543379;
+$no-record:#ADADAD;
+$tab-btn:#508288;
+$placeholder:#907F7F;
+$sans: 'Open Sans', sans-serif;
+
+//sass mixins
+@mixin border($border) {
+    border: $border;
+}
+@mixin border-bottom($border) {
+    border-bottom: $border;
+}
+@mixin border-top($border) {
+    border-top: $border;
+}
+@mixin border-left($border) {
+    border-left: $border;
+}
+@mixin border-right($border) {
+    border-right: $border;
+}
+
+@mixin transition($propery) {
+    -moz-transition: $propery;
+    -webkit-transition: $propery;
+    -ms-transition: $propery;
+    -o-transition: $propery;
+    transition: $propery;
+}
+@mixin transform($propery) {
+    -moz-transform: $propery;
+    -webkit-transform: $propery;
+    -ms-transform: $propery;
+    -o-transform: $propery;
+    transform: $propery;
+}
+@mixin boxshadow($propery) {
+    -moz-box-shadow: $propery;
+    -webkit-box-shadow:  $propery;
+    -ms-box-shadow: $propery;
+    -o-box-shadow: $propery;
+    box-shadow: $propery;
+}
+@mixin animation($propery) {
+    -moz-animation: $propery;
+    -webkit-animation:  $propery;
+    -ms-animation: $propery;
+    -o-animation: $propery;
+    animation: $propery;
+}
+
+.fc-cyan{background:#00ffcc;}
+.fc-orange{background:#ff6600;}
+.fc-black{background:#000000;}
+.fc-pink{background:#ff0066;}
+.fc-blue{background:#0066ff;}
+.fc-brown{background:#993333;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

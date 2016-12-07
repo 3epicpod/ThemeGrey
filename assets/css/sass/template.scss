@@ -1,0 +1,21 @@
+// Reusable
+@import "variables";
+
+// Font
+@import "app/bower_components/font-awesome/scss/font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+// Bootstrap
+@import "app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//new
+@import "button";
+@import "layout";
+@import "sidebar";
+@import "navbar";
+@import "over_ride";
+@import "login"; 
+@import "fontawesome";
+@import "mail";
+@import "loadspin";
+

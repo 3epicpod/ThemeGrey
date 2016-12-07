@@ -1,0 +1,170 @@
+<div class="col-xs-12 button m-t-15 p-b-25">
+	<div class="col-xs-12"> 
+		<div class="col-xs-12 well">
+			<div class="col-xs-6 col-sm-3 m-b-15 center" style="height:200px;">
+				<i class="fa fa-user chart-icon" style="color: #13BDD1"></i>
+				<div id="chart1" class="dash-chart m-auto"></div>
+				<div class="col-xs-12 center f18" style="color: #ccc">70</div>
+				<div class="col-xs-12 center f14" style="color: #13BDD1">New Users</div>
+			</div>
+			<div class="col-xs-6 col-sm-3 m-b-15 center" style="height:200px;">
+				<i class="fa fa-shopping-bag chart-icon" style="color: #f3757d"></i>
+				<div id="chart2" class="dash-chart m-auto"></div>
+				<div class="col-xs-12 center f18" style="color: #ccc">50</div>
+				<div class="col-xs-12 center f14" style="color: #f3757d">Sales</div>
+			</div>
+			<div class="col-xs-6 col-sm-3 m-b-15 center" style="height:200px;">
+				<i class="fa fa-delicious chart-icon" style="color: #efb985"></i>
+				<div id="chart3" class="dash-chart m-auto"></div>
+				<div class="col-xs-12 center f18" style="color: #ccc">80</div>
+				<div class="col-xs-12 center f15" style="color: #efb985">Products</div>
+			</div>
+			<div class="col-xs-6 col-sm-3 m-b-15 center" style="height:200px;">
+				<i class="fa fa-commenting-o chart-icon" style="color: #77e8bc"></i>
+				<div id="chart4" class="dash-chart m-auto"></div>
+				<div class="col-xs-12 center f18" style="color: #ccc">90</div>
+				<div class="col-xs-12 center f15" style="color: #77e8bc">Comments</div>
+			</div> 
+		</div>
+	</div>
+    <div class="col-xs-12 col-sm-7 ">
+        <div class="col-xs-12 well">
+			<div id="chart5" style="min-width: 100px; height: 400px; margin: 0 auto"></div>
+		</div>
+    </div>
+	<div class="col-xs-12 col-sm-5 ">
+        <div class="col-xs-12 well">
+			<div id="chart6" style="min-width: 100px; height: 400px; margin: 0 auto"></div>
+		</div>
+    </div>
+	<div class="col-xs-12">
+		<div class="col-xs-12 well">
+			<table st-table="rowCollection" class="table">
+				<thead>
+					<tr>
+						<th>Icon</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Balance</th>
+						<th>E-mail</th>
+						<th>Share</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="row in rowCollection">
+						<td>
+							<initial-name>{{row.firstName| limitTo:2}}</initial-name>
+						</td>
+						<td class="v-mid">{{row.firstName}}</td>
+						<td class="v-mid">{{row.lastName}}</td>
+						<td class="v-mid">{{row.balance}}</td>
+						<td class="v-mid">
+							{{row.email}}
+							<span class="tab-label" ng-if="row.label"><i class="fa fa-tags m-r-5"></i>{{row.label}}</span>
+						</td>
+						<td class="v-mid">
+							<span ng-if="row.status=='up'" style="color:#5fa277;"><i class="fa fa-level-up"></i>{{row.rate}}</span>
+							<span ng-if="row.status=='down'" style="color:#ff6a6a;"><i class="fa fa-level-down"></i>{{row.rate}}</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+    </div>
+	<div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 well">
+			<h5>Spline chart from c3.js</h5>
+			<div id="chart7" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+		</div>
+    </div> 
+	<div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 well">
+			<h5>Pie chart from c3.js</h5>
+			<div id="chart9" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+		</div>
+    </div>
+	<div class="col-xs-12 center m-b-20">
+			<div class="socialIcons overflow-no">
+				<ul class="social-network social-circle">
+					<li><a href="" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+					<li><a href="" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+    </div>
+	
+	
+	    
+		<div class="col-xs-12 no-padding pageFooter">
+			<div class="col-xs-12 no-padding m-b-10">
+				<div class="col-sm-12 no-padding">
+					<div class="col-sm-offset-1 col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">GitHub<li>
+							<li><a href="">About us</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Contact & support</a></li>
+							<li><a href="">Enterprise</a></li>
+							<li><a href="">Site status</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">Applications<li>
+							<li><a href="">Product for Mac</a></li>
+							<li><a href="">Product for Windows</a></li>
+							<li><a href="">Product for Eclipse</a></li>
+							<li><a href="">Product mobile apps</a></li>							
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">Services<li>
+							<li><a href="">Web analytics</a></li>
+							<li><a href="">Presentations</a></li>
+							<li><a href="">Code snippets</a></li>
+							<li><a href="">Job board</a></li>							
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">Documentation<li>
+							<li><a href="">Product Help</a></li>
+							<li><a href="">Developer API</a></li>
+							<li><a href="">Product Markdown</a></li>
+							<li><a href="">Product Pages</a></li>							
+						</ul>
+					</div>	
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">More<li>
+							<li><a href="">Training</a></li>
+							<li><a href="">Students & teachers</a></li>
+							<li><a href="">The Shop</a></li>
+							<li><a href="">Plans & pricing</a></li>
+							<li><a href="">Contact us</a></li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<hr>
+			<div class="col-xs-12 no-padding company">
+				<div class="col-sm-12 no-padding">
+					<div class="col-sm-8">
+						<a href="">Terms of Service</a> |    
+						<a href="">Privacy</a> |
+						<a href="">Security</a>
+					</div>
+					<div class="col-sm-4">
+						<p class="muted pull-right">© 2016 Company Name. All rights reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+
+    
+</div>

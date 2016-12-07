@@ -1,0 +1,52 @@
+.navbar {
+    top: auto !important; 
+    margin-left: 260px;
+    max-height: 50px;
+    @media (max-width: $screen-sm-max){
+        margin-left: 0px; 
+    }
+    .epicHeader{
+        background: $theme;
+        color:$white;
+        height: 50px;
+        .navbar-toggle{
+            border-color: transparent !important;
+            @media (max-width: $screen-sm-max){
+                display:block;
+                margin: -3px 10px 5px 0px;
+            }        
+        }
+        .menu-bar{
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: $white;
+        }
+        .menu-bar:hover{
+            background: $white;
+            color:$theme;
+        }
+        .icon-pad{
+            padding-right: 3px;
+        }
+        .icon-width{
+            width: 25px;
+        }
+    } 
+} 
+.breadcrumb{
+    padding:0px !important;
+    margin-bottom: 0px !important; 
+    list-style: none;
+    background-color: transparent !important;
+    .active {
+        color:$white !important;
+    }
+    display: inline-block;
+} 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: $white !important;
+    .menu-bar{
+        background:$theme;
+    }
+}

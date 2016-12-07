@@ -1,0 +1,252 @@
+<div class="col-xs-12 button m-t-15 p-b-25" ng-controller="login1Ctrl">
+   <div class="col-xs-12 m-b-15">
+      <div>
+         <h4 class="bold"><i class="fa fa-modx"></i> Basic Table</h4>
+         <span>Examples contains with bootstrap form layout with all the <code>input fields</code> of HTML with deafult validation concept of bootstrap.</span>
+      </div>
+   </div>
+   <div class="col-xs-12  m-b-15">
+	<div class="col-xs-12 well">
+		<p>Form validation state:</p>
+		<div class="form-group has-success">
+		  <label class="control-label" for="inputSuccess1">Input with success</label>
+		  <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+		</div>
+		<div class="form-group has-warning">
+		  <label class="control-label" for="inputWarning1">Input with warning</label>
+		  <input type="text" class="form-control" id="inputWarning1">
+		</div>
+		<div class="form-group has-error">
+		  <label class="control-label" for="inputError1">Input with error</label>
+		  <input type="text" class="form-control" id="inputError1">
+		</div>
+		
+		
+		<div class="form-group has-success has-feedback">
+		  <label class="control-label" for="inputSuccess2">Input with success</label>
+		  <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+		  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputSuccess2Status" class="sr-only">(success)</span>
+		</div>
+		<div class="form-group has-warning has-feedback">
+		  <label class="control-label" for="inputWarning2">Input with warning</label>
+		  <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+		  <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputWarning2Status" class="sr-only">(warning)</span>
+		</div>
+		<div class="form-group has-error has-feedback">
+		  <label class="control-label" for="inputError2">Input with error</label>
+		  <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+		  <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputError2Status" class="sr-only">(error)</span>
+		</div>
+		<div class="form-group has-success has-feedback">
+		  <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+		  <div class="input-group">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+		  </div>
+		  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+		</div>
+		<div class="form-group has-warning has-feedback">
+		  <label class="control-label" for="inputGroupSuccess1">Input group with warning</label>
+		  <div class="input-group">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+		  </div>
+		  <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputGroupSuccess1Status" class="sr-only">(warning)</span>
+		</div>
+		<div class="form-group has-error has-feedback">
+		  <label class="control-label" for="inputGroupSuccess1">Input group with error</label>
+		  <div class="input-group">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+		  </div>
+		  <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputGroupSuccess1Status" class="sr-only">(error)</span>
+		</div>
+
+		 
+   </div>
+      </div>
+	  <div class="col-xs-12  m-b-15">
+	<div class="col-xs-12 well">
+		<form data-toggle="validator" role="form">
+		<p>Basic bootstrap validation:</p>
+		  <div class="form-group">
+			<label for="inputName" class="control-label">Name</label>
+			<input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+		  </div>
+		  <div class="form-group has-feedback">
+			<label for="inputTwitter" class="control-label">Twitter</label>
+			<div class="input-group">
+			  <span class="input-group-addon">@</span>
+			  <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>
+			</div>
+			<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+			<div class="help-block with-errors">Hey look, this one has feedback icons!</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputEmail" class="control-label">Email</label>
+			<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+			<div class="help-block with-errors"></div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputPassword" class="control-label">Password</label>
+			<div class="row">
+			  <div class="form-group col-xs-12">
+				<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+				<div class="help-block">Minimum of 6 characters</div>
+			  </div>
+			  <div class="form-group col-sm-12">
+			  <label for="inputPassword" class="control-label">Confirm Password</label>
+				<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+				<div class="help-block with-errors"></div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<div class="radio">
+			  <label>
+				<input type="radio" name="underwear" required>
+				Boxers
+			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+				<input type="radio" name="underwear" required>
+				Briefs
+			  </label>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<div class="checkbox">
+			  <label>
+				<input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+				Check yourself
+			  </label>
+			  <div class="help-block with-errors"></div>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		  </div>
+		</form>
+	</div>
+      </div>
+	<div class="col-xs-12  m-b-15">
+	<div class="col-xs-12 well">
+	<form novalidate="novalidate" ng-submit="vm.onSubmit()">
+	<p>Form validation plugin:</p>
+  <div class="form-group">
+    <label for="exampleInputName">Name</label>
+    <input type="text" class="form-control" id="exampleInputName" placeholder="Name" ng-model="vm.model.name" required="" ng-minlength="6" ng-maxlength="255" />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email" ng-model="vm.model.email" required="" />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password" ng-model="vm.model.password" required="" ng-minlength="6" ng-maxlength="12" />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputGender">Gender</label>
+    <select class="form-control" id="exampleInputGender" placeholder="Email" ng-model="vm.model.gender" ng-options="gender for gender in vm.genders" required="">
+      <option value="">Select Gender...</option>
+    </select>
+  </div>
+  <div class="form-group">
+      <label>
+          <input type="checkbox" ng-model="model.termsAccepted" required/>
+          I accept the terms...
+      </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit Form</button>
+  <button type="reset" class="btn btn-secondary">Rest Form</button>
+</form>
+	</div>
+      </div>
+<div class="col-xs-12 center m-b-20">
+			<div class="socialIcons overflow-no">
+				<ul class="social-network social-circle">
+					<li><a href="" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+					<li><a href="" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+    </div>
+	
+	
+	    
+		<div class="col-xs-12 no-padding pageFooter">
+			<div class="col-xs-12 no-padding m-b-10">
+				<div class="col-sm-12 no-padding">
+					<div class="col-sm-offset-1 col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">GitHub<li>
+							<li><a href="">About us</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Contact & support</a></li>
+							<li><a href="">Enterprise</a></li>
+							<li><a href="">Site status</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">Applications<li>
+							<li><a href="">Product for Mac</a></li>
+							<li><a href="">Product for Windows</a></li>
+							<li><a href="">Product for Eclipse</a></li>
+							<li><a href="">Product mobile apps</a></li>							
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">Services<li>
+							<li><a href="">Web analytics</a></li>
+							<li><a href="">Presentations</a></li>
+							<li><a href="">Code snippets</a></li>
+							<li><a href="">Job board</a></li>							
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">Documentation<li>
+							<li><a href="">Product Help</a></li>
+							<li><a href="">Developer API</a></li>
+							<li><a href="">Product Markdown</a></li>
+							<li><a href="">Product Pages</a></li>							
+						</ul>
+					</div>	
+					<div class="col-sm-2">
+						<ul class="unstyled">
+							<li class="bold">More<li>
+							<li><a href="">Training</a></li>
+							<li><a href="">Students & teachers</a></li>
+							<li><a href="">The Shop</a></li>
+							<li><a href="">Plans & pricing</a></li>
+							<li><a href="">Contact us</a></li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<hr>
+			<div class="col-xs-12 no-padding company">
+				<div class="col-sm-12 no-padding">
+					<div class="col-sm-8">
+						<a href="">Terms of Service</a> |    
+						<a href="">Privacy</a> |
+						<a href="">Security</a>
+					</div>
+					<div class="col-sm-4">
+						<p class="muted pull-right">© 2016 Company Name. All rights reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

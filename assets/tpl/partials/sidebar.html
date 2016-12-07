@@ -1,0 +1,254 @@
+<aside class="sidebar fixed no-m" ng-class="{'side-out':boolChangeClass}" ng-controller="homeCtrl">
+    <div class="blocker" ng-click="toHide()" ng-show="showBlocker"></div>
+    <div class="brand-logo">
+			<div style="font-size:70px;">3</div>
+			<div style="font-size:20px;">EPIC POD</div>
+			<!--img src="static/img/icons/logopod.png" style="width: 90px;margin-left: 130px;"/-->
+    </div>
+    <div>
+        <div class="panel-group" id="accordion">			
+			<div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapseDash'>
+				<a ui-sref="dashboard1" ng-click="toHide()" class="no-ul">
+                    <h4 class="no-margin f14 bold" data-parent="#accordion" data-toggle="collapse" data-target='#collapseDash'>
+                        
+							<i class="adjust fa fa-th"></i>&nbsp;Dashboard 1
+                        
+                    </h4>
+					</a>
+                </div>
+                <div id="collapseDash" class="panel-collapse collapse in">
+                     
+                </div>
+            </div>
+			<div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapseDash2'>
+                    <a ui-sref="dashboard2" ng-click="toHide()" class="no-ul">
+					<h4 class="no-margin f14 bold" data-parent="#accordion" data-toggle="collapse" data-target='#collapseDash2'>
+                        
+							<i class="adjust fa fa-th-list"></i>&nbsp;Dashboard 2
+                        
+                    </h4>
+					</a>
+                </div>
+                <div id="collapseDash2" class="panel-collapse collapse in">
+                     
+                </div>
+            </div>			
+            <div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapseOne'>
+                    <h4 class="panel-title bold" data-parent="#accordion" data-toggle="collapse" data-target='#collapseOne'>
+                        <i class="adjust fa fa-database"></i>&nbsp;Grid Systems
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body p-t-5">
+                        <a ui-sref="layout" ng-click="toHide()" class="no-ul">
+                            <div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Layout</div>
+                            </div>
+                        </a>
+                        <a ui-sref="responsiveLayout" ng-click="toHide()" class="no-ul">
+                            <div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Responsive Columns</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapseTwo'>
+                    <h4 class="panel-title bold collapsed" data-parent="#accordion" data-toggle="collapse" data-target='#collapseTwo'>
+                        <i class="adjust fa fa-bars"></i>&nbsp;Tables
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body p-t-5">
+                        <a ui-sref="basicTable" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Basic Tables</div></div></a>
+                        <a ui-sref="angularTable" ng-click="toHide()" class="no-ul">
+                            <div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Angular Search</div>
+                            </div>
+                        </a>
+                        <a ui-sref="sortableTable" ng-click="toHide()" class="no-ul">
+                            <div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Sortable Table</div>
+                            </div>
+                        </a>
+                        <a ui-sref="paginateTable" ng-click="toHide()" class="no-ul">
+                            <div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Pagination Table</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapseThree'>
+                    <h4 class="panel-title bold collapsed" data-parent="#accordion" data-toggle="collapse" data-target='#collapseThree'>
+                        <i class="adjust fa fa-cube"></i>&nbsp;Form Components
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body p-t-5">
+                        <a ui-sref="basicform" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Basic Form</div></div></a>
+                        <a ui-sref="formlayout" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Form Layout</div></div></a>
+                        <a ui-sref="formvalidation" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Form Validation</div></div></a>
+						<a ui-sref="loading" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Loading Bar</div></div></a>
+                        <a ui-sref="tabform" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Tab Form</div></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapseFive'>
+                    <h4 class="panel-title bold collapsed" data-parent="#accordion" data-toggle="collapse" data-target='#collapseFive'>
+                        <i class="adjust fa fa-building-o"></i>&nbsp;UI Elements
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                    <div class="panel-body p-t-5">
+                        <a ui-sref="buttons" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Buttons</div></div></a> 
+                        <a ui-sref="alert" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Alert</div></div></a>
+                        <a ui-sref="draganddrop" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Drag and Drop</div></div></a>
+						<a ui-sref="fontawesome" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">FontAwesome Icons</div></div></a>
+                        <a ui-sref="accordion" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Accordion</div></div></a>
+                        <a ui-sref="card" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Cards 1</div></div></a>
+                        <a ui-sref="card2" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Cards 2</div></div></a> 
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapseFour'>
+                    <h4 class="panel-title bold collapsed" data-parent="#accordion" data-toggle="collapse" data-target='#collapseFour'>
+                        <i class="adjust fa fa-area-chart"></i>&nbsp;Charts
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body p-t-5">
+                        <a ui-sref="line/bar" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Line/Bar chart</div></div></a>
+                        <a ui-sref="pie/donut" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Pie/Donut Chart</div></div></a>
+                        <a ui-sref="3d/semi" ng-click="toHide()" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">3D/Semi Chart</div></div></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapseSix'>
+                    <h4 class="panel-title bold collapsed" data-parent="#accordion" data-toggle="collapse" data-target='#collapseSix'>
+                        <i class="adjust fa fa-cubes"></i>&nbsp;Extra Pages
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse">
+                    <div class="panel-body p-t-5">
+                        <a ui-sref="login" ng-click="toHide()" onclick="singlePage();" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Login</div></div></a>
+						<a ui-sref="register" ng-click="toHide()" onclick="singlePage();" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Register</div></div></a>
+						<a ui-sref="forgotPwd" ng-click="toHide()" onclick="singlePage();" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Forgot Password</div></div></a>
+                        <a ui-sref="error400" ng-click="toHide()" onclick="singlePage();" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Error/400 Page</div></div></a>
+                        <a ui-sref="error401" ng-click="toHide()" onclick="singlePage();" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Error/401 Page</div></div></a>
+                        <a ui-sref="error404" ng-click="toHide()" onclick="singlePage();" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Error/404 Page</div></div></a>
+                        <a ui-sref="error500" ng-click="toHide()" onclick="singlePage();" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Error/500 Page</div></div></a> 
+                        
+                        <a ui-sref="thankyou" ng-click="toHide()" onclick="singlePage();" class="no-ul"><div class="subdata">
+                                <div class="line" style="margin-top:2px;"></div>
+                                <div class="data p-l-15">Thankyou Page</div></div></a>
+
+                    </div>
+                </div>
+            </div> 
+			<div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapsespin'>
+                    <a ui-sref="loadspin" ng-click="toHide()" class="no-ul">
+							<h4 class="no-margin f14 bold" data-parent="#accordion" data-toggle="collapse" data-target='#collapsespin'>
+                        <i class="adjust fa fa-spin fa-spinner"></i>&nbsp;Loading Spinners
+                        
+                    </h4>
+					</a>
+                </div>
+                <div id="collapsespin" class="panel-collapse collapse in">
+                     
+                </div>
+            </div>	
+
+			<div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#collapseCarousel'>
+                    <a ui-sref="carousel" ng-click="toHide()" class="no-ul">
+							<h4 class="no-margin f14 bold" data-parent="#accordion" data-toggle="collapse" data-target='#collapseCarousel'>
+                        <i class="adjust fa fa-map-o"></i>&nbsp;Carousel
+                        
+                    </h4>
+					</a>
+                </div>
+                <div id="collapseCarousel" class="panel-collapse collapse in">
+                     
+                </div>
+            </div>		
+
+			<div class="panel panel-default">
+                <div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target='#floating_btn'>
+                   <a ui-sref="floatingBtn" ng-click="toHide()" class="no-ul">
+							 <h4 class="no-margin f14 bold" data-parent="#accordion" data-toggle="collapse" data-target='#floating_btn'>
+                        <i class="adjust fa fa-tty"></i>&nbsp;Floating Btn
+						
+                    </h4>
+					</a>
+                </div>
+                <div id="floating_btn" class="panel-collapse collapse in">
+                     
+                </div>
+            </div>		
+        </div>
+
+    </div>
+</aside>

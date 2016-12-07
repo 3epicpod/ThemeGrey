@@ -1,0 +1,166 @@
+.sidebar{ 
+    border-right: 1px solid $theme;
+    left: 0;
+    width: 260px;
+    height:100%;
+    z-index: 1037;
+    overflow: auto;
+    background-color: $theme;
+    background: $theme;
+    @include transition(left,.5s);
+    @media (max-width: $screen-sm-max){
+        left: -260px; 
+    }
+    .brand-logo {
+        min-height: 100px; 
+		background:#2d2d2d;
+		color:#fff;
+		padding: 5px 10px;
+		background-image: url("../../static/img/icons/lines.png");
+		    background-size: 100% 100%;
+    background-repeat: no-repeat;
+		div{
+		    height: 100px;
+			position:absolute;
+		}
+    }
+    .ui-select-container{
+        .ui-select-toggle{
+            background: transparent;
+            @include border(none);
+            @include boxshadow(none);
+            @include border-bottom(1px solid $theme);
+            padding-left: 0px;
+        }
+        .btn-default:hover, .btn-default:focus, 
+            .btn-default.focus, .btn-default:active, 
+            .btn-default.active, .open > .btn-default.dropdown-toggle{
+            color: $black;
+            background-color:transparent;
+        }
+        .btn-default-focus{
+            background: transparent !important;
+            @include boxshadow(none);
+        }
+    }
+    .blocker{
+        width: 2000px;
+        height: 2000px;
+        position: fixed;
+        background: $black;
+        opacity: 0;
+        z-index: -1;
+    } 
+    .panel-body{ 
+        .subdata{ 
+            padding: 10px 20px;
+            font-size: 14px;
+            background: transparent;
+            color: $blue;
+            margin-top: 2px;
+        } 
+        .line{
+            width: 4px;
+            height: 16px;
+            position: absolute;
+            display: inline;
+            background: $theme;
+            padding: 0px;
+        }
+        .data{
+            display: inline;
+        }
+    }
+    .panel-title{
+        font-size: 14px;
+    }
+    .adjust{
+        width: 16px;
+    } 
+    td .btn-link{
+        color: $white !important;
+    }
+    td .btn-link:hover{
+        color: $theme !important;
+        background: $white;
+    }
+    td .btn-link:visited{
+        color: $white;
+    }
+    .panel{
+        border-radius: 0px !important;
+        background-color: transparent; 
+        border: transparent;
+        @include boxshadow(none);
+    }
+    .panel-body{
+        background: transparent;
+    }
+    .panel-default > .panel-heading{
+        background: transparent;
+    }
+    .panel-heading {
+        cursor: pointer;
+    } 
+
+    .panel-title:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e114";
+        float: right;
+        color: $blue;
+    }
+    .panel-title.collapsed:after {
+        content: "\e080";
+    }
+    .panel-single-title{
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: inherit;
+    }
+} 
+
+.main-container .main-content{
+    margin-left: 260px;
+    margin-bottom: 20px;
+    
+    @media (max-width: $screen-sm-max){
+        margin-left: 0px; 
+    }
+} 
+.main-container{
+    height: 100%;
+}
+.side-out { 
+    @include transition(left, 1s);
+    left: 0px;
+}
+
+.brand-logo {
+        min-height: 100px; 
+		background:#2d2d2d;
+		color:#fff;
+		padding: 5px 10px;
+		background-image: url("../../static/img/icons/lines.png");
+		    background-size: 100% 100%;
+		background-repeat: no-repeat;
+		div{
+		    height: 100px;
+			position:absolute;
+		}
+    }
+	.extra{
+		.brand-logo {
+        min-height: 100px; 
+		background:#f3f3f3;
+		color:#000;
+		padding: 5px 10px;
+		background-image: url("../../static/img/icons/lines.png");
+		    background-size: 100% 100%;
+		background-repeat: no-repeat;
+		div{
+		    height: 100px;
+			position:absolute;
+		}
+	}
+	}
